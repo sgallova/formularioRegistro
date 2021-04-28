@@ -1,0 +1,15 @@
+head
+  style(type='text/css').
+body(style='margin:0; padding:0; background-color:#F2F2F2;')
+  a(href='/register') Registrarse
+  center
+  table(cellspacing='0', cellpadding='0', border='0', bgcolor='#F2F2F2')
+    thead
+      tr
+        th Name
+        th Email
+    tbody
+      each user in userList
+        tr
+          td #{user.name}
+          td #{user.email}
