@@ -1,0 +1,14 @@
+-if (error)
+  div#error(style='background-color:#efc4ca; color:#9c2525; padding: 4px; width: 9%; margin-bottom: 1%;')
+    p Datos incorrectos
+div
+  form(action='/login' method='POST')
+    label(for='email') Email
+    br
+    input#email(type='text' name='email')
+    br
+    label(for='password') Contrase&ntilde;a
+    br
+    input#password(type='password' name='password')
+    br
+    input(type='submit' value='Ingresar')
